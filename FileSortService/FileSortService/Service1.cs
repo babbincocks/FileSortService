@@ -160,7 +160,7 @@ namespace FileSortService
             string fileName = e.Name;
 
             WatcherChangeTypes changeType = e.ChangeType;
-
+            //TODO: Check if Changed will fire off if a deletion or anything like that is done.
             if (changeType == WatcherChangeTypes.Changed)
             {
                 string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
@@ -195,7 +195,7 @@ namespace FileSortService
 
             if(!File.Exists(checkPath))
             {
-
+                //TODO: Set it up so a text file is created in place of whatever file is deleted.
             }
             else
             {
