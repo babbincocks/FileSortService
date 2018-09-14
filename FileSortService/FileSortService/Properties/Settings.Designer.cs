@@ -34,5 +34,29 @@ namespace FileSortService.Properties {
                 this["currentUser"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\Cyberadmin\\Desktop\\archive")]
+        public string backupDirectory {
+            get {
+                return ((string)(this["backupDirectory"]));
+            }
+            set {
+                this["backupDirectory"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\Cyberadmin\\Desktop\\VGDatabase")]
+        public string targetDirectory {
+            get {
+                return ((string)(this["targetDirectory"]));
+            }
+            set {
+                this["targetDirectory"] = value;
+            }
+        }
     }
 }

@@ -15,8 +15,14 @@ namespace FileSortService
     {
 
         bool activeCheck;
-        Queue<string> qDirectories = new Queue<string>();
+        Queue<Video> qVideo = new Queue<Video>();
+        Queue<Audio> qAudio = new Queue<Audio>();
+        Queue<Graphic> qGraphic = new Queue<Graphic>();
+        Queue<Document> qDocument = new Queue<Document>();
+        Queue<Archive> qArchive = new Queue<Archive>();
+        Queue<BaseFile> qFile = new Queue<BaseFile>();
         DateTime lastSearch;
+
 
         public List<string> GraphicTypes = new List<string>();
         public List<string> VideoTypes = new List<string>();
@@ -63,22 +69,28 @@ namespace FileSortService
             activeCheck = true;
             //string me = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
             Properties.Settings.Default.currentUser = Environment.UserName;
-            Properties.Settings.Default.Save();
+            
+
+            fswMain.Filter = "*.*";
+            fswMain.Path = Properties.Settings.Default.targetDirectory;
+            
+            timeMain.Enabled = true;
             
         }
 
         protected override void OnStop()
         {
             activeCheck = false;
+            Properties.Settings.Default.Save();
         }
 
         internal void TestStartandStop(string[] args)
         {
             this.OnStart(args);
 
-            while(timeMain.Enabled)
+            while(activeCheck)
             {
-                Console.ReadLine();
+                
             }
 
             this.OnStop();
@@ -88,30 +100,109 @@ namespace FileSortService
         {
             timeMain.Enabled = false;
 
-            
+            CommitFileChanges(Properties.Settings.Default.backupDirectory);
 
             lastSearch = DateTime.Now;
-            timeMain.Enabled = activeCheck;
+            timeMain.Enabled = true;
             
+        }
+
+        private void CommitFileChanges(string targetDirectory)
+        {
+
+        }
+
+        private string SortFile(string path,string extension)
+        {
+            string section = "";
+
+            if (GraphicTypes.Contains(extension))
+            {
+                Graphic newFile = new Graphic(path);
+                section = newFile.FileType;
+            }
+            else if (VideoTypes.Contains(extension))
+            {
+                Video newFile = new Video(path);
+                section = newFile.FileType;
+            }
+            else if (AudioTypes.Contains(extension))
+            {
+                Audio newFile = new Audio(path);
+                section = newFile.FileType;
+            }
+            else if (DocumentTypes.Contains(extension))
+            {
+                Document newFile = new Document(path);
+                section = newFile.FileType;
+            }
+            else if (ArchiveTypes.Contains(extension))
+            {
+                Archive newFile = new Archive(path);
+                section = newFile.FileType;
+            }
+            else
+            {
+                Document newFile = new Document(path, true);
+                section = newFile.FileType;
+            }
+
+            return section;
         }
 
         private void fswMain_Changed(object sender, FileSystemEventArgs e)
         {
             string createdFile = e.FullPath;
+            
+            string ext = Path.GetExtension(createdFile);
+            string section = SortFile(createdFile, ext);
 
-            string a = e.ChangeType.ToString();
+            string fileName = e.Name;
+
+            WatcherChangeTypes changeType = e.ChangeType;
+
+            if (changeType == WatcherChangeTypes.Changed)
+            {
+                string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
+
+                File.Copy(createdFile, checkPath, true);
+            }
+
+            
         }
 
         private void fswMain_Created(object sender, FileSystemEventArgs e)
         {
             string createdFile = e.FullPath;
 
+            string ext = Path.GetExtension(createdFile);
+
+            string section = SortFile(createdFile, ext);
+
             string a = e.ChangeType.ToString();
         }
 
         private void fswMain_Deleted(object sender, FileSystemEventArgs e)
         {
-            string createdFile = e.FullPath;
+            string deletedFile = Path.GetFileName(e.FullPath);
+            
+            //Properties.Settings.Default.backupDirectory;
+            
+
+            string ext = Path.GetExtension(deletedFile);
+
+            string checkPath = Path.Combine();
+
+            if(!File.Exists(checkPath))
+            {
+
+            }
+            else
+            {
+
+            }
+
+            SortFile(deletedFile, ext);
 
             string a = e.ChangeType.ToString();
         }
@@ -119,6 +210,10 @@ namespace FileSortService
         private void fswMain_Renamed(object sender, RenamedEventArgs e)
         {
             string createdFile = e.FullPath;
+
+            string ext = Path.GetExtension(createdFile);
+
+            
 
             string a = e.ChangeType.ToString();
         }

@@ -5,5 +5,11 @@
     <Setting Name="currentUser" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="backupDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\Cyberadmin\Desktop\archive</Value>
+    </Setting>
+    <Setting Name="targetDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\Cyberadmin\Desktop\VGDatabase</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

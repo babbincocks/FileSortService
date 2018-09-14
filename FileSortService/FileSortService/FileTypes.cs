@@ -19,6 +19,7 @@ namespace FileSortService
         private DateTime _modDate;
         private bool _readOnly;
         private string _extension;
+        private string _fileType;
 
         public BaseFile()
         {
@@ -88,6 +89,12 @@ namespace FileSortService
         {
             get { return _extension ?? ""; }
         }
+
+        public abstract string FileType
+        {
+            get;
+        }
+        
 
         private string[] FullFileInfo(string filePath)
         {
@@ -159,6 +166,11 @@ namespace FileSortService
         public string Resolution
         {
             get { return (_resolution != null || _resolution != " x ") ? _resolution : "0 x 0"; }
+        }
+
+        public override string FileType
+        {
+            get { return "Graphic"; }
         }
 
         public override void ViewFile()
@@ -284,6 +296,11 @@ namespace FileSortService
             get { return _frameRate; }
         }
 
+        public override string FileType
+        {
+            get { return "Video"; }
+        }
+
         public override void ViewFile()
         {
             System.Diagnostics.Process.Start(this.Path);
@@ -378,6 +395,11 @@ namespace FileSortService
             get { return _lengthInSeconds; }
         }
 
+        public override string FileType
+        {
+            get { return "Audio"; }
+        }
+
         public override void ViewFile()
         {
             System.Diagnostics.Process.Start(this.Path);
@@ -389,6 +411,7 @@ namespace FileSortService
 
     class Document : BaseFile
     {
+        private bool _isBase;
 
         public Document() : base()
         {
@@ -397,7 +420,17 @@ namespace FileSortService
 
         public Document(string filePath) : base(filePath)
         {
+            _isBase = false;
+        }
 
+        public Document(string filePath, bool isBase)
+        {
+            _isBase = isBase;
+        }
+
+        public override string FileType
+        {
+            get { return (_isBase == false) ? "Document" : "Uncategorized"; }
         }
 
 
@@ -421,14 +454,28 @@ namespace FileSortService
 
         public Archive(string filePath) : base(filePath)
         {
-
-            using (ZipFile zip = ZipFile.Read(filePath))
+            try
             {
-                _fileCount = zip.Count;
-                _encryptionType = zip.Encryption.ToString();
+                if (ZipFile.IsZipFile(filePath))
+                {
+
+                    using (ZipFile zip = ZipFile.Read(filePath))
+                    {
+                        _fileCount = zip.Count;
+                        _encryptionType = zip.Encryption.ToString();
+                    }
+                }
+                else
+                {
+                    _fileCount = 0;
+                    _encryptionType = "No Encryption";
+                }
+
             }
-
-
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public int FileCount
@@ -439,6 +486,11 @@ namespace FileSortService
         public string EncryptionType
         {
             get { return _encryptionType; }
+        }
+
+        public override string FileType
+        {
+            get { return "Archive"; }
         }
 
         public override void ViewFile()

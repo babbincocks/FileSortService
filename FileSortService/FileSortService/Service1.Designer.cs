@@ -35,7 +35,7 @@
             // 
             // timeMain
             // 
-            this.timeMain.Enabled = true;
+            this.timeMain.Interval = 3000D;
             this.timeMain.Elapsed += new System.Timers.ElapsedEventHandler(this.timer1_Elapsed);
             // 
             // fswMain
