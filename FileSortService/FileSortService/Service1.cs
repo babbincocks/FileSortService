@@ -8,6 +8,8 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using Shell32;
+using System.Threading;
 
 namespace FileSortService
 {
@@ -150,8 +152,48 @@ namespace FileSortService
             return section;
         }
 
+        private string SortFile(string path, string extension, bool a)
+        {
+            string section = "";
+
+            if (GraphicTypes.Contains(extension))
+            {
+
+                section = "Graphic";
+            }
+            else if (VideoTypes.Contains(extension))
+            {
+
+                section = "Video";
+            }
+            else if (AudioTypes.Contains(extension))
+            {
+
+                section = "Audio";
+            }
+            else if (DocumentTypes.Contains(extension))
+            {
+
+                section = "Document";
+            }
+            else if (ArchiveTypes.Contains(extension))
+            {
+
+                section = "Archive";
+            }
+            else
+            {
+
+                section = "Base File";
+            }
+
+            return section;
+        }
+
         private void fswMain_Changed(object sender, FileSystemEventArgs e)
         {
+            //Changed event does not fire for a straight-up deletion or a move.
+
             string createdFile = e.FullPath;
             
             string ext = Path.GetExtension(createdFile);
@@ -160,7 +202,7 @@ namespace FileSortService
             string fileName = e.Name;
 
             WatcherChangeTypes changeType = e.ChangeType;
-            //TODO: Check if Changed will fire off if a deletion or anything like that is done.
+            
             if (changeType == WatcherChangeTypes.Changed)
             {
                 string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
@@ -184,18 +226,31 @@ namespace FileSortService
 
         private void fswMain_Deleted(object sender, FileSystemEventArgs e)
         {
+
             string deletedFile = Path.GetFileName(e.FullPath);
-            
-            //Properties.Settings.Default.backupDirectory;
-            
-
             string ext = Path.GetExtension(deletedFile);
+            //Properties.Settings.Default.backupDirectory;
 
-            string checkPath = Path.Combine();
+            //ThreadStart start = new ThreadStart();
+            //Thread staThread = new Thread();
+            //Shell shell = new Shell(); 
+            //Folder recycleBin = shell.NameSpace(10);
 
-            if(!File.Exists(checkPath))
+            //foreach (FolderItem2 newDeleteLocal in recycleBin.Items())
+            //{
+
+            //}
+
+            string section = SortFile(deletedFile, ext, true);
+
+            string fileName = e.Name;
+
+            string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
+
+            if (!File.Exists(checkPath))
             {
-                //TODO: Set it up so a text file is created in place of whatever file is deleted.
+                //TODO: Set it up so a text file is created if a file is deleted, but was not part of the archive already.
+
             }
             else
             {

@@ -430,7 +430,7 @@ namespace FileSortService
 
         public override string FileType
         {
-            get { return (_isBase == false) ? "Document" : "Uncategorized"; }
+            get { return (_isBase == false) ? "Document" : "Base File"; }
         }
 
 
