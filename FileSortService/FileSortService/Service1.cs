@@ -13,6 +13,7 @@ using System.Threading;
 
 namespace FileSortService
 {
+    
     public partial class FileSortService : ServiceBase
     {
 
@@ -121,31 +122,37 @@ namespace FileSortService
             if (GraphicTypes.Contains(extension))
             {
                 Graphic newFile = new Graphic(path);
+                qGraphic.Enqueue(newFile);
                 section = newFile.FileType;
             }
             else if (VideoTypes.Contains(extension))
             {
                 Video newFile = new Video(path);
+                qVideo.Enqueue(newFile);
                 section = newFile.FileType;
             }
             else if (AudioTypes.Contains(extension))
             {
                 Audio newFile = new Audio(path);
+                qAudio.Enqueue(newFile);
                 section = newFile.FileType;
             }
             else if (DocumentTypes.Contains(extension))
             {
                 Document newFile = new Document(path);
+                qDocument.Enqueue(newFile);
                 section = newFile.FileType;
             }
             else if (ArchiveTypes.Contains(extension))
             {
                 Archive newFile = new Archive(path);
+                qArchive.Enqueue(newFile);
                 section = newFile.FileType;
             }
             else
             {
                 Document newFile = new Document(path, true);
+                qDocument.Enqueue(newFile);
                 section = newFile.FileType;
             }
 
@@ -224,16 +231,18 @@ namespace FileSortService
             string a = e.ChangeType.ToString();
         }
 
+        //[STAThread]
         private void fswMain_Deleted(object sender, FileSystemEventArgs e)
         {
 
             string deletedFile = Path.GetFileName(e.FullPath);
             string ext = Path.GetExtension(deletedFile);
-            //Properties.Settings.Default.backupDirectory;
 
-            //ThreadStart start = new ThreadStart();
-            //Thread staThread = new Thread();
-            //Shell shell = new Shell(); 
+            //Properties.Settings.Default.backupDirectory;
+            
+            //Thread staThread = new Thread(Action.CreateShell);
+            //staThread.Start();
+            //Shell shell = new Shell();
             //Folder recycleBin = shell.NameSpace(10);
 
             //foreach (FolderItem2 newDeleteLocal in recycleBin.Items())
@@ -250,17 +259,17 @@ namespace FileSortService
             if (!File.Exists(checkPath))
             {
                 //TODO: Set it up so a text file is created if a file is deleted, but was not part of the archive already.
-
+                File.WriteAllText(checkPath, );
+                
             }
-            else
-            {
 
-            }
 
             SortFile(deletedFile, ext);
 
             string a = e.ChangeType.ToString();
         }
+        
+        
 
         private void fswMain_Renamed(object sender, RenamedEventArgs e)
         {
@@ -273,4 +282,18 @@ namespace FileSortService
             string a = e.ChangeType.ToString();
         }
     }
+
+    //class Action
+    //{
+    //    internal static void CreateShell()
+    //    {
+    //        Shell shell = new Shell();
+    //        Folder recycleBin = shell.NameSpace(10);
+
+    //        foreach (FolderItem2 newDeleteLocal in recycleBin.Items())
+    //        {
+
+    //        }
+    //    }
+    //}
 }
