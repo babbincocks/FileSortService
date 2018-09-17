@@ -26,7 +26,6 @@ namespace FileSortService
         Queue<BaseFile> qFile = new Queue<BaseFile>();
         DateTime lastSearch;
 
-
         public List<string> GraphicTypes = new List<string>();
         public List<string> VideoTypes = new List<string>();
         public List<string> AudioTypes = new List<string>();
@@ -38,8 +37,10 @@ namespace FileSortService
             InitializeComponent();
         }
 
+
         protected override void OnStart(string[] args)
         {
+
             GraphicTypes.Add(".jpg");
             GraphicTypes.Add(".jpeg");
             GraphicTypes.Add(".png");
@@ -113,6 +114,39 @@ namespace FileSortService
         private void CommitFileChanges(string targetDirectory)
         {
 
+               while(qDocument.Any())
+               {
+                   Document curr = qDocument.Dequeue();
+               }
+            
+               while(qGraphic.Any())
+               {
+                   Graphic curr = qGraphic.Dequeue();
+               }
+            
+               while(qVideo.Any())
+               {
+                   Video curr = qVideo.Dequeue();
+               }
+            
+               while(qAudio.Any())
+               {
+                   Audio curr = qAudio.Dequeue();
+               }
+            
+            
+               while(qArchive.Any())
+               {
+                   Archive curr = qArchive.Dequeue();
+               }
+            
+
+               while(qFile.Any())
+               {
+                   BaseFile curr = qFile.Dequeue();
+            
+               }
+            
         }
 
         private string SortFile(string path,string extension)
@@ -201,21 +235,17 @@ namespace FileSortService
         {
             //Changed event does not fire for a straight-up deletion or a move.
 
-            string createdFile = e.FullPath;
+            string changedFile = e.FullPath;
             
-            string ext = Path.GetExtension(createdFile);
-            string section = SortFile(createdFile, ext);
+            string ext = Path.GetExtension(changedFile);
+            string section = SortFile(changedFile, ext);
 
             string fileName = e.Name;
-
-            WatcherChangeTypes changeType = e.ChangeType;
             
-            if (changeType == WatcherChangeTypes.Changed)
-            {
-                string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
+            string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
 
-                File.Copy(createdFile, checkPath, true);
-            }
+            File.Copy(changedFile, checkPath, true);
+
 
             
         }
@@ -225,10 +255,13 @@ namespace FileSortService
             string createdFile = e.FullPath;
 
             string ext = Path.GetExtension(createdFile);
-
             string section = SortFile(createdFile, ext);
 
-            string a = e.ChangeType.ToString();
+            string fileName = e.Name;
+
+            string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
+
+            File.Copy(createdFile, checkPath, true);
         }
 
         //[STAThread]
@@ -253,33 +286,48 @@ namespace FileSortService
             string section = SortFile(deletedFile, ext, true);
 
             string fileName = e.Name;
+            
 
             string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
+            string deletePath = Path.Combine(Properties.Settings.Default.backupDirectory, section,  fileName.Replace(ext, "") + " (Deleted)" + ext);
 
             if (!File.Exists(checkPath))
             {
-                //TODO: Set it up so a text file is created if a file is deleted, but was not part of the archive already.
-                File.WriteAllText(checkPath, );
+                File.WriteAllText(deletePath, e.FullPath + " was deleted or moved on " + DateTime.Now + ".");
                 
             }
 
-
-            SortFile(deletedFile, ext);
-
-            string a = e.ChangeType.ToString();
         }
         
         
 
         private void fswMain_Renamed(object sender, RenamedEventArgs e)
         {
-            string createdFile = e.FullPath;
+            string renamedFile = e.FullPath;
 
-            string ext = Path.GetExtension(createdFile);
+            string oldPath = e.OldFullPath;
+
+            string ext = Path.GetExtension(renamedFile);
+            string section = SortFile(renamedFile, ext);
+
+            string fileName = e.Name;
+            string oldName = e.OldName;
+            string oldArcPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, oldName);
+            string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
+
+            if(File.Exists(oldArcPath))
+            {
+                File.Move(oldArcPath, checkPath);
+                File.Copy(renamedFile, checkPath, true);
+            }
+            else
+            {
+                File.Copy(renamedFile, checkPath, true);
+            }
+                
+
 
             
-
-            string a = e.ChangeType.ToString();
         }
     }
 
