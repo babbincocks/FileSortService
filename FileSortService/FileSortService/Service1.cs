@@ -238,15 +238,28 @@ namespace FileSortService
             string changedFile = e.FullPath;
             
             string ext = Path.GetExtension(changedFile);
-            string section = SortFile(changedFile, ext);
 
-            string fileName = e.Name;
-            
-            string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
+            if (ext == null)
+            {
+                string [] files = Directory.GetFiles(changedFile);
+                foreach(string file in files)
+                {
+                    //FileSystemEventArgs newEvent = new FileSystemEventArgs(WatcherChangeTypes.Changed, )
+                    //fswMain_Changed()
+                }
 
-            File.Copy(changedFile, checkPath, true);
+            }
+            else
+            {
+                string section = SortFile(changedFile, ext);
 
+                string fileName = e.Name;
 
+                string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
+
+                File.Copy(changedFile, checkPath, true);
+
+            }
             
         }
 
@@ -255,13 +268,20 @@ namespace FileSortService
             string createdFile = e.FullPath;
 
             string ext = Path.GetExtension(createdFile);
-            string section = SortFile(createdFile, ext);
+            if (ext == null)
+            {
 
-            string fileName = e.Name;
+            }
+            else
+            {
+                string section = SortFile(createdFile, ext);
 
-            string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
+                string fileName = e.Name;
 
-            File.Copy(createdFile, checkPath, true);
+                string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
+
+                File.Copy(createdFile, checkPath, true);
+            }
         }
 
         //[STAThread]
@@ -270,6 +290,27 @@ namespace FileSortService
 
             string deletedFile = Path.GetFileName(e.FullPath);
             string ext = Path.GetExtension(deletedFile);
+            string fileName = e.Name;
+
+            if (ext.Length < 1)
+            {
+                string foldPath = Path.Combine(Properties.Settings.Default.backupDirectory, fileName);
+                string textPath = Path.Combine(foldPath, fileName + " (Deleted)" + ".txt");
+                Directory.CreateDirectory(foldPath);
+                File.WriteAllText(textPath, e.FullPath + " was deleted or moved on " + DateTime.Now + ".");
+            }
+            else
+            {
+                string section = SortFile(deletedFile, ext, true);
+
+                string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
+                string deletePath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName.Replace(ext, "") + " (Deleted)" + ext);
+
+                if (!File.Exists(checkPath))
+                {
+                    File.WriteAllText(deletePath, e.FullPath + " was deleted or moved on " + DateTime.Now + ".");
+                }
+            }
 
             //Properties.Settings.Default.backupDirectory;
             
@@ -283,19 +324,7 @@ namespace FileSortService
 
             //}
 
-            string section = SortFile(deletedFile, ext, true);
-
-            string fileName = e.Name;
-            
-
-            string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
-            string deletePath = Path.Combine(Properties.Settings.Default.backupDirectory, section,  fileName.Replace(ext, "") + " (Deleted)" + ext);
-
-            if (!File.Exists(checkPath))
-            {
-                File.WriteAllText(deletePath, e.FullPath + " was deleted or moved on " + DateTime.Now + ".");
-                
-            }
+           
 
         }
         
@@ -308,24 +337,31 @@ namespace FileSortService
             string oldPath = e.OldFullPath;
 
             string ext = Path.GetExtension(renamedFile);
-            string section = SortFile(renamedFile, ext);
 
-            string fileName = e.Name;
-            string oldName = e.OldName;
-            string oldArcPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, oldName);
-            string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
-
-            if(File.Exists(oldArcPath))
+            if (ext == null)
             {
-                File.Move(oldArcPath, checkPath);
-                File.Copy(renamedFile, checkPath, true);
+
             }
             else
             {
-                File.Copy(renamedFile, checkPath, true);
-            }
-                
+                string section = SortFile(renamedFile, ext);
 
+                string fileName = e.Name;
+                string oldName = e.OldName;
+                string oldArcPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, oldName);
+                string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
+
+                if (File.Exists(oldArcPath))
+                {
+                    File.Move(oldArcPath, checkPath);
+                    File.Copy(renamedFile, checkPath, true);
+                }
+                else
+                {
+                    File.Copy(renamedFile, checkPath, true);
+                }
+
+            }
 
             
         }
