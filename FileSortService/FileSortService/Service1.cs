@@ -271,7 +271,8 @@ namespace FileSortService
                 else
                 {
                     //TODO: If a file is in a folder in the target directory, have it appear in a folder named after the folder in the target directory. The folder will already be created in the initial part of this if...else statement.
-                    string origLocation = Path.Combine(Properties.Settings.Default.targetDirectory, );
+                    string fileDirectory = Path.GetFileName(Path.GetDirectoryName(e.FullPath));
+                    string origLocation = Path.Combine(Properties.Settings.Default.targetDirectory, fileDirectory, e.Name);
                     Path.GetDirectoryName(changedFile);
                     File.Copy(origLocation, changedFile, true);
 
@@ -288,8 +289,23 @@ namespace FileSortService
             string createdFile = e.FullPath;
 
             string ext = Path.GetExtension(createdFile);
-            if (ext == null)
+            if (ext.Length < 1)
             {
+
+                string name = Path.GetFileName(createdFile);
+                string newFold = Path.Combine(Properties.Settings.Default.backupDirectory, name);
+                if (!Directory.Exists(newFold))
+                {
+                    Directory.CreateDirectory(newFold);
+                }
+
+                string[] files = Directory.GetFiles(createdFile);
+                foreach (string file in files)
+                {
+
+                    FileSystemEventArgs newEvent = new FileSystemEventArgs(WatcherChangeTypes.Changed, newFold, Path.GetFileName(file));
+                    fswMain_Changed(sender, newEvent);
+                }
 
             }
             else
