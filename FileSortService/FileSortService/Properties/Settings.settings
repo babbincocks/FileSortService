@@ -6,10 +6,10 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="backupDirectory" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\Users\Cyberadmin\Desktop\archive</Value>
+      <Value Profile="(Default)">C:\Users\Zachary\Desktop\archive</Value>
     </Setting>
     <Setting Name="targetDirectory" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\Users\Cyberadmin\Desktop</Value>
+      <Value Profile="(Default)">C:\Users\Zachary\Desktop</Value>
     </Setting>
   </Settings>
 </SettingsFile>

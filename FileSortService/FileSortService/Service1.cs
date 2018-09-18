@@ -271,8 +271,9 @@ namespace FileSortService
                 else
                 {
                     //TODO: If a file is in a folder in the target directory, have it appear in a folder named after the folder in the target directory. The folder will already be created in the initial part of this if...else statement.
-                    
-                    Path.GetDirectoryName(e.FullPath);
+                    string origLocation = Path.Combine(Properties.Settings.Default.targetDirectory, );
+                    Path.GetDirectoryName(changedFile);
+                    File.Copy(origLocation, changedFile, true);
 
                 }
 
