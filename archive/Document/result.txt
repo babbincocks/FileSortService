@@ -1,0 +1,1808 @@
+File Missing: 
+README.md
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\README.md
+
+
+
+
+File Missing: 
+COMMIT_EDITMSG
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\COMMIT_EDITMSG
+
+
+
+
+File Missing: 
+FETCH_HEAD
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\FETCH_HEAD
+
+
+
+
+File Missing: 
+ORIG_HEAD
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\ORIG_HEAD
+
+
+
+
+File Missing: 
+master
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\logs\refs\remotes\origin
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\logs\refs\remotes\origin\master
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\04 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\04
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\05 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\05
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\06 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\06
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\07 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\07
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\10 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\10
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\13 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\13
+found within the primary directory.
+
+
+
+
+File Missing: 
+3de708e7910c7c45357a11f823815a682dbba1
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\19
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\19\3de708e7910c7c45357a11f823815a682dbba1
+
+
+
+
+File Missing: 
+4a55afe082b956eb7102bec41d824f44929be2
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\19
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\19\4a55afe082b956eb7102bec41d824f44929be2
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\1a does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\1a
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\1b does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\1b
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\1c does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\1c
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\1e does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\1e
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\1f does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\1f
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\20 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\20
+found within the primary directory.
+
+
+
+
+File Missing: 
+08317e416b9c2241cbc40592745ad0e0a55f6b
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\21
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\21\08317e416b9c2241cbc40592745ad0e0a55f6b
+
+
+
+
+File Missing: 
+5256cde8d04f5883a7968680ff5a085eb27f51
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\21
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\21\5256cde8d04f5883a7968680ff5a085eb27f51
+
+
+
+
+File Missing: 
+bbeccf8bd5ff25962929c666176439cf640171
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\21
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\21\bbeccf8bd5ff25962929c666176439cf640171
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\24 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\24
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\26 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\26
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\27 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\27
+found within the primary directory.
+
+
+
+
+File Missing: 
+0356c905b5381c8a0dbfe6655371ab2c42ad84
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\2a
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\2a\0356c905b5381c8a0dbfe6655371ab2c42ad84
+
+
+
+
+File Missing: 
+944e5ddcaa000899f5feb1915d3b321d23b4ad
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\2a
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\2a\944e5ddcaa000899f5feb1915d3b321d23b4ad
+
+
+
+
+File Missing: 
+be60377e9e1871cc2318330ac35fac10ff59af
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\2a
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\2a\be60377e9e1871cc2318330ac35fac10ff59af
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\2b does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\2b
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\2d does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\2d
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\2e does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\2e
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\2f does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\2f
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\31 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\31
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\33 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\33
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\34 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\34
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\36 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\36
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\3b does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\3b
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\3c does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\3c
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\3d does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\3d
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\3e does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\3e
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\3f does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\3f
+found within the primary directory.
+
+
+
+
+File Missing: 
+767d419068ad081ef7e332837542008a774799
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\40
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\40\767d419068ad081ef7e332837542008a774799
+
+
+
+
+File Missing: 
+da5825866d3f3e6fb38c12acf362fd2e75d182
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\40
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\40\da5825866d3f3e6fb38c12acf362fd2e75d182
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\41 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\41
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\42 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\42
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\43 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\43
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\44 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\44
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\45 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\45
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\47 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\47
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\48 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\48
+found within the primary directory.
+
+
+
+
+File Missing: 
+336b8cf8bd93a38ae17cc8f7cbbde405a17e86
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\49
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\49\336b8cf8bd93a38ae17cc8f7cbbde405a17e86
+
+
+
+
+File Missing: 
+dc587e716545a1117ac70ae51ba01379839145
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\49
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\49\dc587e716545a1117ac70ae51ba01379839145
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\4a does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\4a
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\4b does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\4b
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\4d does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\4d
+found within the primary directory.
+
+
+
+
+File Missing: 
+5d7a42ef3edca10ee8d2a61772bf49749e4a5e
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\4e
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\4e\5d7a42ef3edca10ee8d2a61772bf49749e4a5e
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\4f does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\4f
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\50 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\50
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\52 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\52
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\53 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\53
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\54 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\54
+found within the primary directory.
+
+
+
+
+File Missing: 
+a6c045cca214ac31747fc93f6552a137bc77ee
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\55
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\55\a6c045cca214ac31747fc93f6552a137bc77ee
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\56 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\56
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\58 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\58
+found within the primary directory.
+
+
+
+
+File Missing: 
+2c10052b3a1b8da1a7052076e6da83d53c02da
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\59
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\59\2c10052b3a1b8da1a7052076e6da83d53c02da
+
+
+
+
+File Missing: 
+e63a27371ba26e27d1626f1f0ed834e4e2933a
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\59
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\59\e63a27371ba26e27d1626f1f0ed834e4e2933a
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\5a does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\5a
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\5e does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\5e
+found within the primary directory.
+
+
+
+
+File Missing: 
+282702bb03ef11d7184d19c80927b47f919764
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\5f
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\5f\282702bb03ef11d7184d19c80927b47f919764
+
+
+
+
+File Missing: 
+dd8dacc37ed75c5aae7c8bba22c43b77264d8d
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\5f
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\5f\dd8dacc37ed75c5aae7c8bba22c43b77264d8d
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\61 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\61
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\62 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\62
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\65 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\65
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\66 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\66
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\6a does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\6a
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\6c does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\6c
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\6d does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\6d
+found within the primary directory.
+
+
+
+
+File Missing: 
+183bd59594e807e5c2f0e17eb9a30862b05032
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\6e
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\6e\183bd59594e807e5c2f0e17eb9a30862b05032
+
+
+
+
+File Missing: 
+95150bae41aed43622e89c0a11465f8eb5d7cd
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\6e
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\6e\95150bae41aed43622e89c0a11465f8eb5d7cd
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\6f does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\6f
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\71 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\71
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\74 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\74
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\75 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\75
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\76 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\76
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\77 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\77
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\79 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\79
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\7a does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\7a
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\7b does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\7b
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\7c does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\7c
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\7d does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\7d
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\7e does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\7e
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\7f does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\7f
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\80 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\80
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\81 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\81
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\82 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\82
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\83 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\83
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\85 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\85
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\88 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\88
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\89 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\89
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\8b does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\8b
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\8e does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\8e
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\8f does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\8f
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\90 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\90
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\91 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\91
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\94 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\94
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\96 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\96
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\97 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\97
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\98 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\98
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\9c does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\9c
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\9e does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\9e
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\a2 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\a2
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\a4 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\a4
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\a5 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\a5
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\a6 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\a6
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\a7 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\a7
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\a8 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\a8
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\a9 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\a9
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\ab does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\ab
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\ac does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\ac
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\ae does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\ae
+found within the primary directory.
+
+
+
+
+File Missing: 
+4ceba15734b458d06ec694c0a48904fac658aa
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\af
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\af\4ceba15734b458d06ec694c0a48904fac658aa
+
+
+
+
+File Missing: 
+bac9ce58a51519d0570e0cbff880a24beaf591
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\af
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\af\bac9ce58a51519d0570e0cbff880a24beaf591
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\b0 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\b0
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\b1 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\b1
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\b2 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\b2
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\b4 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\b4
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\b5 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\b5
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\b6 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\b6
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\b7 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\b7
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\b8 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\b8
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\ba does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\ba
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\bc does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\bc
+found within the primary directory.
+
+
+
+
+File Missing: 
+b3334cd6174604bd5fa807fdfc6ea6d28e1e8b
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\bd
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\bd\b3334cd6174604bd5fa807fdfc6ea6d28e1e8b
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\be does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\be
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\c1 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\c1
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\c5 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\c5
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\c7 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\c7
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\c8 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\c8
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\ca does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\ca
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\cb does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\cb
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\cd does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\cd
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\ce does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\ce
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\cf does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\cf
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\d0 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\d0
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\d2 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\d2
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\d4 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\d4
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\d6 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\d6
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\d7 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\d7
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\d9 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\d9
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\da does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\da
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\db does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\db
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\dd does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\dd
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\df does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\df
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\e1 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\e1
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\e3 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\e3
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\e4 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\e4
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\e5 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\e5
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\e6 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\e6
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\e7 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\e7
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\e8 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\e8
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\e9 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\e9
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\eb does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\eb
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\ec does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\ec
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\ed does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\ed
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\ee does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\ee
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\f0 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\f0
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\f3 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\f3
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\f5 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\f5
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\f6 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\f6
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\f7 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\f7
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\f8 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\f8
+found within the primary directory.
+
+
+
+
+File Missing: 
+a61c2ffa776a73ae754db282636d91bf2b6b82
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\f9
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\f9\a61c2ffa776a73ae754db282636d91bf2b6b82
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\fa does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\fa
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\fb does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\fb
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\fc does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\fc
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\fd does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\fd
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\ff does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\ff
+found within the primary directory.
+
+
+
+
+File Missing: 
+pack-72c44a94e2f2634a2cd8c66bd160112312d12666.idx
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\pack
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\pack\pack-72c44a94e2f2634a2cd8c66bd160112312d12666.idx
+
+
+
+
+File Missing: 
+pack-72c44a94e2f2634a2cd8c66bd160112312d12666.pack
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\pack
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\pack\pack-72c44a94e2f2634a2cd8c66bd160112312d12666.pack
+
+
+
+
+File Missing: 
+master
+Exists in C:\Users\Cyberadmin\Desktop\ASPResume\.git\refs\remotes\origin
+Does not exist in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\refs\remotes\origin\master
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\Portfolio_Site does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\ASPResume\Portfolio_Site
+found within the primary directory.
+
+
+
+
+File Missing: 
+.gitattributes
+Exists in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison
+Does not exist in C:\Users\Cyberadmin\Desktop\ASPResume\.gitattributes
+
+
+
+
+File Missing: 
+.gitignore
+Exists in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison
+Does not exist in C:\Users\Cyberadmin\Desktop\ASPResume\.gitignore
+
+
+
+
+File Missing: 
+DirectoryComparison.sln
+Exists in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison
+Does not exist in C:\Users\Cyberadmin\Desktop\ASPResume\DirectoryComparison.sln
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\0e does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\0e
+found within the primary directory.
+
+
+
+
+File Missing: 
+db189c10999c6ac26a0a4f6a2612997158580f
+Exists in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\19
+Does not exist in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\19\db189c10999c6ac26a0a4f6a2612997158580f
+
+
+
+
+File Missing: 
+0eee52d7a0035ac6191c13fba55ef19ccf27c0
+Exists in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\21
+Does not exist in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\21\0eee52d7a0035ac6191c13fba55ef19ccf27c0
+
+
+
+
+File Missing: 
+89e45474b3f4b38df0e9c50f11df39dfc9b897
+Exists in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\2a
+Does not exist in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\2a\89e45474b3f4b38df0e9c50f11df39dfc9b897
+
+
+
+
+File Missing: 
+47ebe698c273f2673f7454a4a224f7ab6e74fe
+Exists in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\40
+Does not exist in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\40\47ebe698c273f2673f7454a4a224f7ab6e74fe
+
+
+
+
+File Missing: 
+f18f22b3bdeff2855581071fd8f3d82cf36272
+Exists in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\49
+Does not exist in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\49\f18f22b3bdeff2855581071fd8f3d82cf36272
+
+
+
+
+File Missing: 
+2a96f136ad048fffea237fe8729c2f62b54158
+Exists in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\4e
+Does not exist in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\4e\2a96f136ad048fffea237fe8729c2f62b54158
+
+
+
+
+File Missing: 
+a8e218667fac2cdf673ad756f5ec7bb802d293
+Exists in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\55
+Does not exist in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\55\a8e218667fac2cdf673ad756f5ec7bb802d293
+
+
+
+
+File Missing: 
+583ce1283106379a2cbf098276a7cecd3fab2f
+Exists in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\59
+Does not exist in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\59\583ce1283106379a2cbf098276a7cecd3fab2f
+
+
+
+
+File Missing: 
+d9b69961d5fe0404098d294912e67c450a86fd
+Exists in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\5f
+Does not exist in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\5f\d9b69961d5fe0404098d294912e67c450a86fd
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\69 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\69
+found within the primary directory.
+
+
+
+
+File Missing: 
+d7d7bc4f4e27de265fcd561ef92aaf52e570dd
+Exists in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\6e
+Does not exist in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\6e\d7d7bc4f4e27de265fcd561ef92aaf52e570dd
+
+
+
+
+File Missing: 
+7dbebbacef595e3089c01c05671016c21a8304
+Exists in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\af
+Does not exist in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\af\7dbebbacef595e3089c01c05671016c21a8304
+
+
+
+
+File Missing: 
+b0cabc87cf50106df6e15097dff816c8c3eb34
+Exists in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\bd
+Does not exist in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\bd\b0cabc87cf50106df6e15097dff816c8c3eb34
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\c9 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\c9
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\e0 does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\e0
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\ea does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\ea
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\ef does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\ef
+found within the primary directory.
+
+
+
+
+File Missing: 
+02e7747feb92ec5433c5a788a62faef5af5580
+Exists in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\f9
+Does not exist in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\f9\02e7747feb92ec5433c5a788a62faef5af5580
+
+
+
+
+File Missing: 
+aa24eec861bca1d4550c05b462efa56e936ce6
+Exists in C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.git\objects\f9
+Does not exist in C:\Users\Cyberadmin\Desktop\ASPResume\.git\objects\f9\aa24eec861bca1d4550c05b462efa56e936ce6
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\ASPResume\.vs does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\.vs
+found within the primary directory.
+
+
+
+
+Directory missing: 
+C:\Users\Cyberadmin\Desktop\ASPResume\DirectCompare does not exist.
+This folder would correspond to the existing folder
+C:\Users\Cyberadmin\Desktop\a\DirectoryComparison\DirectCompare
+found within the primary directory.
+
+
+
+
+
+
+

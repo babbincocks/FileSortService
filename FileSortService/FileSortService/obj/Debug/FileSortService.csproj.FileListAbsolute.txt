@@ -45,3 +45,5 @@ C:\Users\Zachary\Desktop\FileSortService\FileSortService\FileSortService\obj\Deb
 C:\Users\Zachary\Desktop\FileSortService\FileSortService\FileSortService\obj\Debug\FileSortService.csproj.CopyComplete
 C:\Users\Zachary\Desktop\FileSortService\FileSortService\FileSortService\obj\Debug\FileSortService.exe
 C:\Users\Zachary\Desktop\FileSortService\FileSortService\FileSortService\obj\Debug\FileSortService.pdb
+C:\Users\Cyberadmin\Desktop\FileSortService\FileSortService\FileSortService\obj\Debug\Interop.Shell32.dll
+C:\Users\Cyberadmin\Desktop\FileSortService\FileSortService\FileSortService\obj\Debug\FileSortService.csproj.ResolveComReference.cache

@@ -8,8 +8,6 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-using Shell32;
-using System.Threading;
 
 namespace FileSortService
 {
@@ -233,31 +231,52 @@ namespace FileSortService
 
         private void fswMain_Changed(object sender, FileSystemEventArgs e)
         {
-            //Changed event does not fire for a straight-up deletion or a move.
+            //Changed event does not fire for a straight-up deletion or a move away from the target directory.
 
             string changedFile = e.FullPath;
             
             string ext = Path.GetExtension(changedFile);
 
-            if (ext == null)
+            if (ext.Length < 1)
             {
+                
+                string name = Path.GetFileName(changedFile);
+                string newFold = Path.Combine(Properties.Settings.Default.backupDirectory, name);
+                if(!Directory.Exists(newFold))
+                {
+                    Directory.CreateDirectory(newFold);
+                }
+
                 string [] files = Directory.GetFiles(changedFile);
                 foreach(string file in files)
                 {
-                    //FileSystemEventArgs newEvent = new FileSystemEventArgs(WatcherChangeTypes.Changed, )
-                    //fswMain_Changed()
+                    
+                    FileSystemEventArgs newEvent = new FileSystemEventArgs(WatcherChangeTypes.Changed, newFold, Path.GetFileName(file));
+                    fswMain_Changed(sender, newEvent);
                 }
 
             }
             else
             {
-                string section = SortFile(changedFile, ext);
+                if(Path.GetDirectoryName(e.FullPath) == Properties.Settings.Default.targetDirectory)
+                {
+                    string section = SortFile(changedFile, ext, true);
 
-                string fileName = e.Name;
+                    string fileName = e.Name;
 
-                string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
+                    string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
 
-                File.Copy(changedFile, checkPath, true);
+                    File.Copy(changedFile, checkPath, true);
+                }
+                else
+                {
+                    //TODO: If a file is in a folder in the target directory, have it appear in a folder named after the folder in the target directory. The folder will already be created in the initial part of this if...else statement.
+                    
+                    Path.GetDirectoryName(e.FullPath);
+
+                }
+
+                
 
             }
             
