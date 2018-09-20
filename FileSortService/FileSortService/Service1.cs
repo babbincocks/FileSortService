@@ -11,7 +11,7 @@ using System.IO;
 
 namespace FileSortService
 {
-    
+
     public partial class FileSortService : ServiceBase
     {
 
@@ -68,31 +68,95 @@ namespace FileSortService
             ArchiveTypes.Add(".rar");
             ArchiveTypes.Add(".7z");
 
-            activeCheck = true;
+
             //string me = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
             Properties.Settings.Default.currentUser = Environment.UserName;
-            
+            LoadDirectories();
+
 
             fswMain.Filter = "*.*";
             fswMain.Path = Properties.Settings.Default.targetDirectory;
-            
+
+
+            activeCheck = true;
             timeMain.Enabled = true;
-            
+
+        }
+
+        private void LoadDirectories()
+        {
+            StreamReader directories = new StreamReader("Directories.csv");
+            FSWRedux newFSW;
+            string currentLine = "", source = "", destination = "";
+            bool validLine = false;
+            string[] splitLine;
+
+            while (!directories.EndOfStream)
+            {
+                currentLine = directories.ReadLine();
+                validLine = false;
+
+                splitLine = currentLine.Split(',');
+
+                if (splitLine.Length == 3)
+                {
+                    if (splitLine[1].StartsWith("*."))
+                    {
+                        if (splitLine[0] != splitLine[2])
+                        {
+                            validLine = true;
+                            source = splitLine[0].Trim().Trim('"');
+                            destination = splitLine[3].Trim().Trim('"');
+                        }
+
+                    }
+
+                }
+
+                if (validLine)
+                {
+
+                }
+
+            }
+
+        }
+
+        private FSWRedux CreateFileWatcher(string FileSource, string FileDestination)
+        {
+            FSWRedux newFSW = new FSWRedux(FileDestination);
+            string file = "";
+
+            if (!Directory.Exists(FileSource))
+            {
+                file = FileSource;
+            }
+
+
+            if (newFSW.Path.Length > 0)
+            {
+                return newFSW;
+            }
+            else
+            {
+                return null;
+            }
+
         }
 
         protected override void OnStop()
         {
             activeCheck = false;
-            Properties.Settings.Default.Save();
+
         }
 
         internal void TestStartandStop(string[] args)
         {
             this.OnStart(args);
 
-            while(activeCheck)
+            while (activeCheck)
             {
-                
+
             }
 
             this.OnStop();
@@ -106,48 +170,48 @@ namespace FileSortService
 
             lastSearch = DateTime.Now;
             timeMain.Enabled = true;
-            
+
         }
 
         private void CommitFileChanges(string targetDirectory)
         {
 
-               while(qDocument.Any())
-               {
-                   Document curr = qDocument.Dequeue();
-               }
-            
-               while(qGraphic.Any())
-               {
-                   Graphic curr = qGraphic.Dequeue();
-               }
-            
-               while(qVideo.Any())
-               {
-                   Video curr = qVideo.Dequeue();
-               }
-            
-               while(qAudio.Any())
-               {
-                   Audio curr = qAudio.Dequeue();
-               }
-            
-            
-               while(qArchive.Any())
-               {
-                   Archive curr = qArchive.Dequeue();
-               }
-            
+            while (qDocument.Any())
+            {
+                Document curr = qDocument.Dequeue();
+            }
 
-               while(qFile.Any())
-               {
-                   BaseFile curr = qFile.Dequeue();
-            
-               }
-            
+            while (qGraphic.Any())
+            {
+                Graphic curr = qGraphic.Dequeue();
+            }
+
+            while (qVideo.Any())
+            {
+                Video curr = qVideo.Dequeue();
+            }
+
+            while (qAudio.Any())
+            {
+                Audio curr = qAudio.Dequeue();
+            }
+
+
+            while (qArchive.Any())
+            {
+                Archive curr = qArchive.Dequeue();
+            }
+
+
+            while (qFile.Any())
+            {
+                BaseFile curr = qFile.Dequeue();
+
+            }
+
         }
 
-        private string SortFile(string path,string extension)
+        private string SortFile(string path, string extension)
         {
             string section = "";
 
@@ -231,26 +295,28 @@ namespace FileSortService
 
         private void fswMain_Changed(object sender, FileSystemEventArgs e)
         {
-            //Changed event does not fire for a straight-up deletion or a move away from the target directory.
+            //Changed event does not fire for a straight-up deletion or a move away from the target directory. It also does not activate
+            //two levels deep (i.e. it won't activate for changes made in "NewFolder" if "Desktop" is the target directory in 
+            //"C:/Users/Me/Desktop/FolderStuff/NewFolder".
 
             string changedFile = e.FullPath;
-            
+
             string ext = Path.GetExtension(changedFile);
 
             if (ext.Length < 1)
             {
-                
+
                 string name = Path.GetFileName(changedFile);
                 string newFold = Path.Combine(Properties.Settings.Default.backupDirectory, name);
-                if(!Directory.Exists(newFold))
+                if (!Directory.Exists(newFold))
                 {
                     Directory.CreateDirectory(newFold);
                 }
 
-                string [] files = Directory.GetFiles(changedFile);
-                foreach(string file in files)
+                string[] files = Directory.GetFiles(changedFile);
+                foreach (string file in files)
                 {
-                    
+
                     FileSystemEventArgs newEvent = new FileSystemEventArgs(WatcherChangeTypes.Changed, newFold, Path.GetFileName(file));
                     fswMain_Changed(sender, newEvent);
                 }
@@ -258,7 +324,7 @@ namespace FileSortService
             }
             else
             {
-                if(Path.GetDirectoryName(e.FullPath) == Properties.Settings.Default.targetDirectory)
+                if (Path.GetDirectoryName(e.FullPath) == Properties.Settings.Default.targetDirectory)
                 {
                     string section = SortFile(changedFile, ext, true);
 
@@ -270,7 +336,7 @@ namespace FileSortService
                 }
                 else
                 {
-                    //TODO: If a file is in a folder in the target directory, have it appear in a folder named after the folder in the target directory. The folder will already be created in the initial part of this if...else statement.
+
                     string fileDirectory = Path.GetFileName(Path.GetDirectoryName(e.FullPath));
                     string origLocation = Path.Combine(Properties.Settings.Default.targetDirectory, fileDirectory, e.Name);
                     Path.GetDirectoryName(changedFile);
@@ -278,10 +344,10 @@ namespace FileSortService
 
                 }
 
-                
+
 
             }
-            
+
         }
 
         private void fswMain_Created(object sender, FileSystemEventArgs e)
@@ -349,7 +415,7 @@ namespace FileSortService
             }
 
             //Properties.Settings.Default.backupDirectory;
-            
+
             //Thread staThread = new Thread(Action.CreateShell);
             //staThread.Start();
             //Shell shell = new Shell();
@@ -360,11 +426,11 @@ namespace FileSortService
 
             //}
 
-           
+
 
         }
-        
-        
+
+
 
         private void fswMain_Renamed(object sender, RenamedEventArgs e)
         {
@@ -399,9 +465,26 @@ namespace FileSortService
 
             }
 
-            
+
         }
     }
+
+    class FSWRedux : FileSystemWatcher
+    {
+        private string _destination;
+
+        public FSWRedux(string DestinationDirectory)
+        {
+            _destination = DestinationDirectory;
+        }
+
+        public string DestinationDirectory
+        {
+            get { return _destination; }
+            set { _destination = value; }
+        }
+    }
+
 
     //class Action
     //{
