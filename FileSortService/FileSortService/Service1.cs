@@ -86,7 +86,7 @@ namespace FileSortService
 
         private void LoadDirectories()
         {
-            StreamReader directories = new StreamReader(@"C:\Users\Zachary\Desktop\FileSortService\FileSortService\FileSortService\Directories.csv");
+            StreamReader directories = new StreamReader("..\\..\\Directories.csv");
             FSWRedux newFSW;
             string currentLine = "", source = "", destination = "";
             bool validLine = false;
@@ -137,12 +137,13 @@ namespace FileSortService
         private FSWRedux CreateFileWatcher(string FileSource, string FileDestination)
         {
             FSWRedux newFSW = new FSWRedux(FileDestination);
-            string file = "";
+            //string file = "";
 
-            if (!Directory.Exists(FileSource))
+            if (Directory.Exists(FileSource))
             {
-                file = FileSource;
+                newFSW.Path = FileSource;
             }
+
 
 
             if (newFSW.Path.Length > 0)
@@ -310,91 +311,102 @@ namespace FileSortService
             //Changed event does not fire for a straight-up deletion or a move away from the target directory. It also does not activate
             //two levels deep (i.e. it won't activate for changes made in "NewFolder" if "Desktop" is the target directory in 
             //"C:/Users/Me/Desktop/FolderStuff/NewFolder".
-
-            string changedFile = e.FullPath;
-
-            string ext = Path.GetExtension(changedFile);
-
-            if (ext.Length < 1)
+            FSWRedux creater = (FSWRedux)sender;
+            if (e.FullPath != creater.DestinationDirectory)
             {
 
-                string name = Path.GetFileName(changedFile);
-                string newFold = Path.Combine(Properties.Settings.Default.backupDirectory, name);
-                if (!Directory.Exists(newFold))
-                {
-                    Directory.CreateDirectory(newFold);
-                }
 
-                string[] files = Directory.GetFiles(changedFile);
-                foreach (string file in files)
+
+                string changedFile = e.FullPath;
+
+                string ext = Path.GetExtension(changedFile);
+
+                if (ext.Length < 1)
                 {
 
-                    FileSystemEventArgs newEvent = new FileSystemEventArgs(WatcherChangeTypes.Changed, newFold, Path.GetFileName(file));
-                    fswMain_Changed(sender, newEvent);
-                }
+                    string name = Path.GetFileName(changedFile);
+                    string newFold = Path.Combine(Properties.Settings.Default.backupDirectory, name);
+                    if (!Directory.Exists(newFold))
+                    {
+                        Directory.CreateDirectory(newFold);
+                    }
 
-            }
-            else
-            {
-                if (Path.GetDirectoryName(e.FullPath) == Properties.Settings.Default.targetDirectory)
-                {
-                    string section = SortFile(changedFile, ext, true);
+                    string[] files = Directory.GetFiles(changedFile);
+                    foreach (string file in files)
+                    {
 
-                    string fileName = e.Name;
+                        FileSystemEventArgs newEvent = new FileSystemEventArgs(WatcherChangeTypes.Changed, newFold, Path.GetFileName(file));
+                        fswMain_Changed(sender, newEvent);
+                    }
 
-                    string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
-
-                    File.Copy(changedFile, checkPath, true);
                 }
                 else
                 {
+                    if (Path.GetDirectoryName(e.FullPath) == Properties.Settings.Default.targetDirectory)
+                    {
+                        string section = SortFile(changedFile, ext, true);
 
-                    string fileDirectory = Path.GetFileName(Path.GetDirectoryName(e.FullPath));
-                    string origLocation = Path.Combine(Properties.Settings.Default.targetDirectory, fileDirectory, e.Name);
-                    Path.GetDirectoryName(changedFile);
-                    File.Copy(origLocation, changedFile, true);
+                        string fileName = e.Name;
+
+                        string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
+
+                        File.Copy(changedFile, checkPath, true);
+                    }
+                    else
+                    {
+
+                        string fileDirectory = Path.GetFileName(Path.GetDirectoryName(e.FullPath));
+                        string origLocation = Path.Combine(Properties.Settings.Default.targetDirectory, fileDirectory, e.Name);
+                        Path.GetDirectoryName(changedFile);
+                        File.Copy(origLocation, changedFile, true);
+
+                    }
+
+
 
                 }
-
-
-
             }
 
         }
 
         private void fswMain_Created(object sender, FileSystemEventArgs e)
         {
-            string createdFile = e.FullPath;
-
-            string ext = Path.GetExtension(createdFile);
-            if (ext.Length < 1)
+            FSWRedux creater = (FSWRedux)sender;
+            if (e.FullPath != creater.DestinationDirectory)
             {
 
-                string name = Path.GetFileName(createdFile);
-                string newFold = Path.Combine(Properties.Settings.Default.backupDirectory, name);
-                if (!Directory.Exists(newFold))
-                {
-                    Directory.CreateDirectory(newFold);
-                }
+                string createdFile = e.FullPath;
 
-                string[] files = Directory.GetFiles(createdFile);
-                foreach (string file in files)
+                string ext = Path.GetExtension(createdFile);
+                if (ext.Length < 1)
                 {
 
-                    FileSystemEventArgs newEvent = new FileSystemEventArgs(WatcherChangeTypes.Changed, newFold, Path.GetFileName(file));
-                    fswMain_Changed(sender, newEvent);
+                    string name = Path.GetFileName(createdFile);
+                    string newFold = Path.Combine(Properties.Settings.Default.backupDirectory, name);
+                    if (!Directory.Exists(newFold))
+                    {
+                        Directory.CreateDirectory(newFold);
+                    }
+
+                    string[] files = Directory.GetFiles(createdFile);
+                    foreach (string file in files)
+                    {
+
+                        FileSystemEventArgs newEvent = new FileSystemEventArgs(WatcherChangeTypes.Changed, newFold, Path.GetFileName(file));
+                        fswMain_Changed(sender, newEvent);
+                    }
+
                 }
+                else
+                {
+                    string section = SortFile(createdFile, ext);
 
-            }
-            else
-            {
-                string section = SortFile(createdFile, ext);
+                    string fileName = e.Name;
 
-                string fileName = e.Name;
+                    string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
 
-                string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
-
-                File.Copy(createdFile, checkPath, true);
+                    File.Copy(createdFile, checkPath, true);
+                }
             }
         }
 
@@ -402,43 +414,47 @@ namespace FileSortService
         private void fswMain_Deleted(object sender, FileSystemEventArgs e)
         {
 
-            string deletedFile = Path.GetFileName(e.FullPath);
-            string ext = Path.GetExtension(deletedFile);
-            string fileName = e.Name;
-
-            if (ext.Length < 1)
+            FSWRedux creater = (FSWRedux)sender;
+            if (e.FullPath != creater.DestinationDirectory)
             {
-                string foldPath = Path.Combine(Properties.Settings.Default.backupDirectory, fileName);
-                string textPath = Path.Combine(foldPath, fileName + " (Deleted)" + ".txt");
-                Directory.CreateDirectory(foldPath);
-                File.WriteAllText(textPath, e.FullPath + " was deleted or moved on " + DateTime.Now + ".");
-            }
-            else
-            {
-                string section = SortFile(deletedFile, ext, true);
 
-                string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
-                string deletePath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName.Replace(ext, "") + " (Deleted)" + ext);
+                string deletedFile = Path.GetFileName(e.FullPath);
+                string ext = Path.GetExtension(deletedFile);
+                string fileName = e.Name;
 
-                if (!File.Exists(checkPath))
+                if (ext.Length < 1)
                 {
-                    File.WriteAllText(deletePath, e.FullPath + " was deleted or moved on " + DateTime.Now + ".");
+                    string foldPath = Path.Combine(Properties.Settings.Default.backupDirectory, fileName);
+                    string textPath = Path.Combine(foldPath, fileName + " (Deleted)" + ".txt");
+                    Directory.CreateDirectory(foldPath);
+                    File.WriteAllText(textPath, e.FullPath + " was deleted or moved on " + DateTime.Now + ".");
                 }
+                else
+                {
+                    string section = SortFile(deletedFile, ext, true);
+
+                    string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
+                    string deletePath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName.Replace(ext, "") + " (Deleted)" + ext);
+
+                    if (!File.Exists(checkPath))
+                    {
+                        File.WriteAllText(deletePath, e.FullPath + " was deleted or moved on " + DateTime.Now + ".");
+                    }
+                }
+
+                //Properties.Settings.Default.backupDirectory;
+
+                //Thread staThread = new Thread(Action.CreateShell);
+                //staThread.Start();
+                //Shell shell = new Shell();
+                //Folder recycleBin = shell.NameSpace(10);
+
+                //foreach (FolderItem2 newDeleteLocal in recycleBin.Items())
+                //{
+
+                //}
+
             }
-
-            //Properties.Settings.Default.backupDirectory;
-
-            //Thread staThread = new Thread(Action.CreateShell);
-            //staThread.Start();
-            //Shell shell = new Shell();
-            //Folder recycleBin = shell.NameSpace(10);
-
-            //foreach (FolderItem2 newDeleteLocal in recycleBin.Items())
-            //{
-
-            //}
-
-
 
         }
 
@@ -446,38 +462,42 @@ namespace FileSortService
 
         private void fswMain_Renamed(object sender, RenamedEventArgs e)
         {
-            string renamedFile = e.FullPath;
-
-            string oldPath = e.OldFullPath;
-
-            string ext = Path.GetExtension(renamedFile);
-
-            if (ext == null)
+            FSWRedux creater = (FSWRedux)sender;
+            if (e.FullPath != creater.DestinationDirectory)
             {
-                Directory.Move(oldPath, renamedFile);
-            }
-            else
-            {
-                string section = SortFile(renamedFile, ext);
 
-                string fileName = e.Name;
-                string oldName = e.OldName;
-                string oldArcPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, oldName);
-                string checkPath = Path.Combine(Properties.Settings.Default.backupDirectory, section, fileName);
+                string renamedFile = e.FullPath;
 
-                if (File.Exists(oldArcPath))
+                string oldPath = e.OldFullPath;
+
+                string ext = Path.GetExtension(renamedFile);
+
+                if (ext.Length < 1)
                 {
-                    File.Move(oldArcPath, checkPath);
-                    File.Copy(renamedFile, checkPath, true);
+                    Directory.Move(oldPath, renamedFile);
                 }
                 else
                 {
-                    File.Copy(renamedFile, checkPath, true);
+                    string section = SortFile(renamedFile, ext);
+
+                    string fileName = e.Name;
+                    string oldName = e.OldName;
+                    string oldArcPath = Path.Combine(creater.DestinationDirectory, section, oldName);
+                    string checkPath = Path.Combine(creater.DestinationDirectory, section, fileName);
+
+                    if (File.Exists(oldArcPath))
+                    {
+                        File.Move(oldArcPath, checkPath);
+                        File.Copy(renamedFile, checkPath, true);
+                    }
+                    else
+                    {
+                        File.Copy(renamedFile, checkPath, true);
+                    }
+
                 }
 
             }
-
-
         }
     }
 
