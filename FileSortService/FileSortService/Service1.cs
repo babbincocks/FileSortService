@@ -30,6 +30,8 @@ namespace FileSortService
         public List<string> DocumentTypes = new List<string>();
         public List<string> ArchiveTypes = new List<string>();
 
+        List<FSWRedux> watcherList = new List<FSWRedux>();
+
         public FileSortService()
         {
             InitializeComponent();
@@ -74,8 +76,7 @@ namespace FileSortService
             LoadDirectories();
 
 
-            fswMain.Filter = "*.*";
-            fswMain.Path = Properties.Settings.Default.targetDirectory;
+            
 
 
             activeCheck = true;
@@ -85,7 +86,7 @@ namespace FileSortService
 
         private void LoadDirectories()
         {
-            StreamReader directories = new StreamReader("Directories.csv");
+            StreamReader directories = new StreamReader(@"C:\Users\Zachary\Desktop\FileSortService\FileSortService\FileSortService\Directories.csv");
             FSWRedux newFSW;
             string currentLine = "", source = "", destination = "";
             bool validLine = false;
@@ -106,7 +107,7 @@ namespace FileSortService
                         {
                             validLine = true;
                             source = splitLine[0].Trim().Trim('"');
-                            destination = splitLine[3].Trim().Trim('"');
+                            destination = splitLine[2].Trim().Trim('"');
                         }
 
                     }
@@ -115,7 +116,18 @@ namespace FileSortService
 
                 if (validLine)
                 {
+                    newFSW = CreateFileWatcher(source, destination);
 
+                    if(newFSW != null)
+                    {
+                        newFSW.EnableRaisingEvents = true;
+                        newFSW.Created += fswMain_Created;
+                        newFSW.Changed += fswMain_Changed;
+                        newFSW.Deleted += fswMain_Deleted;
+                        newFSW.Renamed += fswMain_Renamed;
+
+                        watcherList.Add(newFSW);
+                    }
                 }
 
             }
@@ -442,7 +454,7 @@ namespace FileSortService
 
             if (ext == null)
             {
-
+                Directory.Move(oldPath, renamedFile);
             }
             else
             {
